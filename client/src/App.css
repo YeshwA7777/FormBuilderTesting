@@ -1,0 +1,394 @@
+/* Dashboard.js */
+
+.topColourBox {
+  background-color: #ffefe8;
+  height: 670px;
+}
+
+.headingBox {
+  background-color: white;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.05) !important;
+  position: relative;
+  top: 50px;
+  height: 60px;
+  display: "flex" !important;
+  flex-direction: "column" !important;
+  justify-content: "center" !important;
+  font-family: "DM Sans" !important;
+  font-weight: 700;
+  font-size: 28px;
+  z-index: 1;
+}
+
+.headingText {
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  left: 610px;
+  top: 15px;
+}
+
+.mainBG {
+  background-color: #fbfbfb;
+}
+
+.containerBox {
+  background-color: #fbfbfb;
+  height: 476px;
+  position: relative;
+  top: 150px;
+}
+
+.dashboardTableContainer {
+  width: 1320px !important;
+  box-shadow: 0px 0px 10px 0px #c2bcbc !important;
+  position: relative;
+  left: 90px;
+  border-radius: 15px;
+  max-height: 450px;
+  overflow: scroll;
+  -webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+
+.dashboardMainTablehead {
+  background-color: #7dd6fa26;
+  max-height: 30px !important;
+}
+
+.myFormsText {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  color: #d8541a;
+  top: 100px;
+  left: 90px;
+}
+
+.createFormsButton {
+  position: absolute !important;
+  top: 100px !important;
+  right: 100px !important;
+  z-index: 999;
+}
+
+.tableHeadings {
+  font-family: "DM Sans" !important;
+  font-weight: 700 !important;
+  font-size: 28px !important;
+}
+
+/* CreateNewForm.js */
+
+.formDetailsBox {
+  height: 400px;
+  width: 800px;
+  background-color: white;
+  box-shadow: 0px 0px 35px 0px #0000000d !important;
+  position: absolute;
+  left: 365px;
+  bottom: 110px;
+  border-radius: 15px;
+}
+
+.formNameText {
+  position: relative;
+  top: 35px;
+  left: 40px;
+}
+
+.descriptionText {
+  position: relative;
+  top: 15px;
+  left: 40px;
+}
+
+.createFormButton {
+  position: relative;
+  left: 330px;
+  top: 10px;
+  background-color: #d8541a !important;
+  color: white !important;
+}
+
+/* FormBuilder.js */
+
+.backToFormsButton {
+  position: absolute;
+  right: 210px;
+  top: 11.5px;
+  background-color: #d8541a !important;
+  color: white !important;
+}
+
+.publishButton {
+  position: absolute;
+  right: 240px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.formCreationButton {
+  position: absolute;
+  right: 160px;
+  top: 18px;
+  cursor: pointer;
+}
+
+.settingsButton {
+  position: absolute;
+  right: 80px;
+  top: 16px;
+}
+
+.formElementsBox {
+  background-color: white !important;
+  height: 577px !important;
+  width: 270px !important;
+  overflow: scroll;
+  position: relative !important;
+  bottom: 100px !important;
+  box-shadow: 0px 0px 35px 0px #0000000d !important;
+  -webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+
+.formFieldsText {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+.droppableAreaBox {
+  max-width: 900px !important;
+  max-height: 380px;
+  position: relative;
+  left: 386px;
+  bottom: 580px;
+  padding: 35px 40px;
+  background-color: white;
+  box-shadow: 0px 0px 35px 0px #0000000d !important;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: scroll;
+  user-select: none;
+  -webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+
+.active {
+  filter: brightness(1.9); 
+}
+
+.addLogoBox {
+  position: relative;
+  bottom: 600px !important;
+  max-width: 100px !important;
+  left: 375px;
+  opacity: 0.55; 
+  transition: opacity 0.3s ease; 
+ }
+ 
+ .addLogoBox:hover {
+  opacity: 1; 
+  cursor: pointer;
+ }
+ 
+
+.startBuildText {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 1000;
+  color: #d8541a;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.dragDropText {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  color: #898989;
+}
+
+.delteIcon {
+  position: absolute;
+  right: 90px;
+  top: "10px" !important;
+}
+
+.renderFormDiv {
+  display: inline-grid;
+  justify-items: start;
+  align-items: center;
+}
+
+.previewButton {
+  position: fixed !important;
+  bottom: 520px !important;
+  left: 1250px;
+  cursor: pointer;
+}
+
+/* RenderFormElements */
+
+.firstNameBox,
+.secondNameBox {
+  display: inline-block;
+  position: relative !important;
+  width: 325px;
+}
+
+.emailTextBox {
+  position: relative !important;
+  width: 340px;
+  color: "#666666";
+}
+
+.streetAddressBox {
+  margin-right: 10px;
+  position: relative;
+  top: 40px;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  width: 840px;
+  margin-bottom: 60px;
+}
+
+.submitElementButton {
+  position: relative;
+  left: 250px;
+  top: 35px;
+  width: 150px;
+  background-color: #d8541a !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+}
+
+.pagebreakButton1 {
+  position: relative;
+  left: 0px;
+  top: 35px;
+  width: 100px;
+  background-color: #d8541a !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+}
+
+.pagebreakButton2 {
+  position: relative;
+  left: 490px;
+  top: 35px;
+  width: 100px;
+  background-color: #d8541a !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+}
+
+.pagebreakButton3 {
+  position: relative;
+  left: 0px;
+  top: 35px;
+  width: 100px;
+  background-color: #d8541a !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+}
+
+.pagebreakButton4 {
+  position: relative;
+  left: 0px;
+  top: 35px;
+  width: 100px;
+  background-color: #d8541a !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+}
+
+/* PublishForm */
+
+.quickShareBox1 {
+  height: 265px;
+  width: 1050px;
+  background-color: white;
+  box-shadow: 0px 0px 35px 0px #0000000d !important;
+  position: absolute;
+  left: 365px;
+  bottom: 260px;
+  border-radius: 15px;
+}
+
+.quickShareBox2 {
+  height: 180px;
+  width: 1050px;
+  background-color: white;
+  box-shadow: 0px 0px 35px 0px #0000000d !important;
+  position: absolute;
+  left: 365px;
+  bottom: 45px;
+  border-radius: 15px;
+}
+
+.backToFormsButtonInPublish {
+  position: absolute;
+  right: 95px;
+  top: 11.5px;
+  background-color: #d8541a !important;
+  color: white !important;
+}
+
+.headingTextPublish {
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  left: 630px;
+  top: 15px;
+}
+
+/* FormPreview */
+
+.formPreviewBox {
+  height: 550px;
+  width: 910px;
+  background-color: white;
+  box-shadow: 0px 0px 35px 0px #0000000d !important;
+  position: absolute;
+  padding: 10px;
+  left: 290px;
+  bottom: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  -webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+
+.previewMainBg{
+  background-color: #fbfbfb;
+  height: 620px;
+  position: relative;
+  top: 50px;
+}
+
+.previewSubmitButton {
+  position: relative;
+  left: 330px;
+  top: 10px;
+  width: 150px;
+  background-color: #d8541a !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+}
