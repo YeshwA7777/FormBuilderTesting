@@ -1,0 +1,49 @@
+<<<<<<< HEAD
+# Ignore node_modules directory
+node_modules/
+client/node_modules
+server/node_modules
+.github
+# Ignore log files
+*.log
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore local configuration files
+.env
+.env.local
+
+# Ignore VS Code settings
+.vscode/
+# Ignoring build files
+client/build
+server/dist
+=======
+# Ignore node_modules directory
+node_modules/
+client/node_modules
+server/node_modules
+.github
+# Ignore log files
+*.log
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore local configuration files
+.env
+.env.local
+
+# Ignore VS Code settings
+.vscode/
+# Ignoring build files
+client/build
+server/dist
+>>>>>>> 6d918b768e08948caf1930aa31d8b205cda40043
